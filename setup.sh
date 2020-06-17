@@ -12,8 +12,7 @@ cd awkdown/
 cp awkdown ~/.local/bin/
 vlcPath=$( command -v vlc)
 streamLinkPath=$(command -v streamlink)
-ffmpegPath=$(command -v ffmpeg)
-echo ${#vlcPath} 
+ffmpegPath=$(command -v ffmpeg) 
 if [ ${#vlcPath} == 0 ]
 then
 	sudo apt install vlc
